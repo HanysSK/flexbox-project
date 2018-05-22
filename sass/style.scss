@@ -16,6 +16,32 @@
 }
 .container {
     width: 100%;
-    max-width: 1138px;
+    max-width: 1140px;
     margin: 0 auto;
+    display: flex;
+}
+@mixin setFont($font-family, $font-weight, $font-size, $color){
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    color: $color;
+ } 
+
+header{
+    background: url(../img/prostok-t-1-kopia-3.png);
+    width: 100%;
+    height: 800px;
+    .header__upper{
+       display: inline-flex;
+        padding-top: 39px;
+        .header__upper--left{
+            justify-content: flex-start;
+            display: flex;
+            @include setFont(roboto, 400, 26px, white);
+                          }
+        .header__upper--right{
+        justify-content: flex-end;    
+        }
+        
+    }
 }
