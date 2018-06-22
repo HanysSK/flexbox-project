@@ -30,20 +30,21 @@ header {
 }
 
 header .header__upper {
-  display: inline-flex;
+  display: flex;
+  display: -webkit-flex;
   padding-top: 39px;
+  justify-content: space-between;
 }
 
 header .header__upper .header__upper--left {
-  justify-content: flex-start;
-  display: flex;
   font-family: roboto;
   font-weight: 400;
   font-size: 26px;
   color: white;
 }
 
-header .header__upper .header__upper--right {
-  justify-content: flex-end;
+header .header__upper ul {
+  list-style: none;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
