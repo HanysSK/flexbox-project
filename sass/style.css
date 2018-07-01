@@ -131,7 +131,8 @@ header .header__center .header__center--button p {
 
 .offer__left hr {
   width: 200px;
-  margin: 40px auto;
+  margin-top: 40px;
+  margin-left: 0;
   display: block;
   border-color: #ed145b;
 }
