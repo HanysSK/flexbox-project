@@ -39,12 +39,21 @@ header .header__left {
 
 header .header__left span {
   color: #ed145b;
+<<<<<<< HEAD
 }
 
 header .header__right {
   margin-top: 47px;
 }
 
+=======
+}
+
+header .header__right {
+  margin-top: 47px;
+}
+
+>>>>>>> fea601a098e7bf04bcdc758b971413d36ff55edc
 header .header__right ul {
   float: right;
 }
@@ -95,6 +104,7 @@ header .header__center div:nth-child(3) p {
   color: white;
 }
 
+<<<<<<< HEAD
 header .header__center .header__center--button {
   margin-top: 85px;
   border: 0;
@@ -137,6 +147,8 @@ header .header__center .header__center--button p {
   border-color: #ed145b;
 }
 
+=======
+>>>>>>> fea601a098e7bf04bcdc758b971413d36ff55edc
 @media (max-width: 767px) {
   .col-s-1 {
     width: 8.33%;
