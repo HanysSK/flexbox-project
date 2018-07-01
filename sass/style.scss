@@ -16,9 +16,8 @@
 }
 .container {
     width: 100%;
-    max-width: 1140px;
+    max-width: 1138px;
     margin: 0 auto;
-    display: flex;
 }
 @mixin setFont($font-family, $font-weight, $font-size, $color){
     font-family: $font-family;
@@ -31,21 +30,135 @@ header{
     background: url(../img/prostok-t-1-kopia-3.png);
     width: 100%;
     height: 800px;
-    .header__upper{
-        display: flex;
-        display: -webkit-flex;
-        padding-top: 39px;
-        justify-content: space-between;
-        .header__upper--left{
-            
-            @include setFont(roboto, 400, 26px, white);
-                          }
-        ul{
-         
-         list-style: none;
-         text-decoration: none;  
-         
-         }
-        
+    
+    .header__left{       
+        margin-top: 39px;
+        @include setFont(roboto, 400, 25px, white);
+       span{
+           color: #ed145b;
+       }
     }
+    .header__right{
+        margin-top: 47px;
+        ul{
+            float: right;
+            li{
+                display: inline-block;
+                padding: 0 15px;
+                a{
+                    text-decoration: none;
+                    list-style: none;                    
+                    @include setFont(roboto, 400, 16px,white);
+                    &:hover{
+                        color: #ed145b;
+                    }
+                }
+            }
+        }
+    }
+    .header__center {
+        text-align: center;
+        margin-top: 220px;
+        .row div:first-child{
+            text-transform: uppercase;
+            @include setFont(lato, 300, 46px, white);
+        }
+             div:nth-child(2){               
+               hr{
+                   width: 200px;
+                   margin: 40px auto;
+                   display: block;
+                   border-color: #ed145b;
+               }
+             }    
+             div:nth-child(3){
+                 p{
+                     padding: 0 38px;
+                     @include setFont(lato, 300, 26px, white);
+                 }
+             }
+        .header__center--button{
+            margin-top: 85px;
+            border: 0;
+            width: 200px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: #ed145b;
+            p{
+                @include setFont(lato, 700, 15px, white)
+            }
+        }     
+       }
+    }
+
+    .triangle{
+        max-width:2000px;
+        width: 100%;
+        height: 0;
+        border-top: 35px solid #ed145b;
+        border-right: 2000px solid transparent;
+    }
+    .offer__left{
+        p{
+            @include setFont(lato, 400, 38px,#5a5a5a);
+            font-style: italic;
+            margin-top: 140px;
+            margin-bottom: 40px;
+        }
+        hr{            
+            width: 200px;
+            margin: 40px auto;
+            display: block;
+            border-color: #ed145b;
+        }
+    }
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px){
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media (min-width: 768px) {
+    /* For desktop: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
 }
